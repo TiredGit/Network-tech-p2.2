@@ -1,1 +1,25 @@
-empty
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git init
+Initialized empty Git repository in C:/UniversityNew/network technologies/GitRepo/tmp/test2/.git/
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git add rep2
+fatal: pathspec 'rep2' did not match any files
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git add rep2.txt
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git commit -m "rep2"
+[master (root-commit) 974d66c] rep2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rep2.txt
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git remote add origin https://github.com/TiredGit/Network-tech-p2.2.git
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git add .\README.md
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git commit -m .\README.md
+[master 229e266] .\README.md
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+PS C:\UniversityNew\network technologies\GitRepo\tmp\test2> git push --force --set-upstream origin master:main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TiredGit/Network-tech-p2.2.git
+   974d66c..229e266  master -> main
+branch 'master' set up to track 'origin/main'.
